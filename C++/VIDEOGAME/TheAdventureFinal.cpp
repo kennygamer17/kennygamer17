@@ -22,7 +22,7 @@ struct enemigos{
     int golpe;
     int vida;
 };
-
+/*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
 //PERSONAJE
 struct inventario_personaje
 {
@@ -59,7 +59,7 @@ struct eventos{
     struct enemigos enemigo;
     struct items item;
 };
-
+/*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
 struct modos{
     char modo[30];
     struct items item[10];
@@ -70,7 +70,7 @@ struct modos{
     struct personaje personaje;
     struct eventos evento[10];
 }modo[2];
-
+/*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
 //FUNCIONES
 void leerinfousuario();
 void guardarinfousuario();
@@ -94,7 +94,7 @@ void inventario(int modo_seleccionado);
 void imprimir_inventario(int modo_seleccionado);
 void configuracion_creativo_juego_empezado(int modo_seleccionado);
 void correr_escapar(int modo_seleccionado, int aleatorio, int aleatorio2);
-
+/*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
 //MAIN
 int main(){
     srand(time(NULL));
@@ -122,7 +122,7 @@ int main(){
             if(!modo[modo_seleccionado].personaje.creado){
                 creacion_del_personaje(modo_seleccionado);
                 modo[modo_seleccionado].personaje.creado = true;
-            }
+            }/*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
             while(historia){
                 guardarinfousuario();
                 inventario_verificador(modo_seleccionado);
@@ -146,7 +146,7 @@ int main(){
                         if(!modo[modo_seleccionado].personaje.estadisticas.estado){
                             cout<<"Tu personaje a muerto"<<endl;
                             system("pause");
-                    }
+                    }/*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
                     }
                     break;
                     case '2':
@@ -178,7 +178,7 @@ int main(){
                     break;
                 }
             }
-
+/*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
             break;
             case '2':
             modo_seleccionado = 1;
@@ -220,7 +220,7 @@ int main(){
                     break;
                     case '3':
                     imprimir_estadisticas(modo_seleccionado);
-                    break;
+                    break;/*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
                     case '4':
                     cout<<"[--------------CONFIGURACION--------------]"<<endl;
                     cout<<"(1)-Modificar-Modo-creativo"<<endl;
@@ -260,7 +260,7 @@ int main(){
             sleep(1);
             break;
         }
-    }
+    }/*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
     return 0;
 }
 //FUNCIONES DE IMPRESION
@@ -306,7 +306,7 @@ void aleatorio_enemigos(int modo_seleccionado){
     }
     for(int i = 0; i<10;i++){
         int aleatorio = 1+rand()%170;
-        modo[modo_seleccionado].enemigo[i].vida = aleatorio;
+        modo[modo_seleccionado].enemigo[i].vida = aleatorio;/*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
     }
     for(int i = 0; i<10;i++){
         int aleatorio = 1+rand()%120;
@@ -337,7 +337,7 @@ void aleatorio_items(int modo_seleccionado){
     for(int i = 0;i<10;i++){
         int aleatorio = 1+rand()%5;
         modo[modo_seleccionado].item[i].usos = aleatorio;
-    }
+    }/*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
 }
 void aleatorio_eventos(int modo_seleccionado){
     for(int i = 0; i<10;i++){
@@ -384,12 +384,12 @@ void creativo_configuracion(int modo_seleccionado){
                 cin>>modo[modo_seleccionado].personaje.estadisticas.vidas;
             break;
             case 'N':
-            
+            /*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
             break;
             default: cout<<"Esa opcion no existe, digite Y o N EN MAYUSCULAS, segun su eleccion"<<endl;
             sleep(1);
             break;
-        }
+        }/*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
     }while(eleccion != 'Y' && eleccion != 'N');
     system("cls");
     cout<<"[----------------MODO CREATIVO AJUSTES----------------]"<<endl;
@@ -410,7 +410,7 @@ void creativo_configuracion(int modo_seleccionado){
                 cout<<"Digite la cantidad de usos -> ";
                 cin>>modo[modo_seleccionado].item[i].usos;
                 cin.ignore();
-            }
+            }/*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
             break;
             case 'N':
             aleatorio_items(modo_seleccionado);
@@ -422,7 +422,7 @@ void creativo_configuracion(int modo_seleccionado){
     }while(eleccion != 'Y' && eleccion != 'N');
     system("cls");
     cout<<"[----------------MODO CREATIVO AJUSTES----------------]"<<endl;
-    do{
+    do{/*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
         cout<<"Desea modificar a los enemigos? Y/N-> ";
         cin>>eleccion;
         cin.ignore();
@@ -438,7 +438,7 @@ void creativo_configuracion(int modo_seleccionado){
                 cin.ignore();
                 cout<<"golpe -> ";
                 cin>>modo[modo_seleccionado].enemigo[i].golpe;
-                cin.ignore();
+                cin.ignore();/*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
             }
             break;
             case 'N':
@@ -449,14 +449,14 @@ void creativo_configuracion(int modo_seleccionado){
             break;
         }
     }while(eleccion != 'Y' && eleccion != 'N');
-    system("cls");
+    system("cls");/*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
     cout<<"[----------------MODO CREATIVO AJUSTES----------------]"<<endl;
     do{
         cout<<"Desea crear sus propios eventos? Y/N -> ";
         cin>>eleccion;
         cin.ignore();
         switch(eleccion){
-            case 'Y':
+            case 'Y':/*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
                 for(int i = 0; i<10;i++){
                     system("cls");
                     cout<<"SE IMPRIMIRAN TODOS LOS ENEMIGOS Y ITEMS"<<endl;
@@ -483,12 +483,12 @@ void creativo_configuracion(int modo_seleccionado){
             aleatorio_eventos(modo_seleccionado);
             break;
             default: cout<<"Esa opcion no existe, digite Y o N EN MAYUSCULAS, segun su eleccion"<<endl;
-            sleep(1);
+            sleep(1);/*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
             break;
         }
-
+/*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
     }while(eleccion != 'Y' && eleccion != 'N');
-    system("cls");
+    system("cls");/*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
     cout<<"\nIMPRIMIENDO TODO LA CONFIGURACION DEL JUEGO"<<endl;
     sleep(2);
     impresion_eventos(modo_seleccionado);
@@ -500,7 +500,7 @@ void creativo_configuracion(int modo_seleccionado){
     impresion_items(modo_seleccionado);
     sleep(2);
     cout<<"\n\n"<<endl;
-}
+}/*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
 void configuracion_creativo_juego_empezado(int modo_seleccionado){
     bool continuar = true;
     while(continuar){
@@ -534,7 +534,7 @@ void configuracion_creativo_juego_empezado(int modo_seleccionado){
                 cout<<"Dijite la cantidad de vidas al comenzar -> ";
                 cin>>modo[modo_seleccionado].personaje.estadisticas.vidas;
             break;
-            case '2':
+            case '2':/*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
                 system("cls");
                 cout<<"[----------Menu Item----------]"<<endl;
                 cout<<"(1)-Cambiar Item especifico"<<endl;
@@ -564,7 +564,7 @@ void configuracion_creativo_juego_empezado(int modo_seleccionado){
                         cout<<"Digite la cantidad de usos -> ";
                         cin>>modo[modo_seleccionado].item[valor].usos;
                         cin.ignore();
-                    }
+                    }/*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
                     }while(valor<0 || valor>9);
                     
                     break;
@@ -587,7 +587,7 @@ void configuracion_creativo_juego_empezado(int modo_seleccionado){
                     sleep(1);
                     break;
                 }
-
+/*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
 
             break;
             case '3':
@@ -598,7 +598,7 @@ void configuracion_creativo_juego_empezado(int modo_seleccionado){
                 cin>>seleccion;
                 cin.ignore();
                 switch(seleccion){
-                    case '1':
+                    case '1':/*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
                     do{
                         system("cls");
                         impresion_enemigos(modo_seleccionado);
@@ -626,7 +626,7 @@ void configuracion_creativo_juego_empezado(int modo_seleccionado){
                     case '2':
                     cout<<"A continuacion, tendra que crear 10 eventos"<<endl;
                         for(int i = 0; i<10;i++){
-                            system("cls");
+                            system("cls");/*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
                             cout<<"SE IMPRIMIRAN TODOS LOS ENEMIGOS Y ITEMS"<<endl;
                             impresion_enemigos(modo_seleccionado);
                             impresion_items(modo_seleccionado);
@@ -664,7 +664,7 @@ void configuracion_creativo_juego_empezado(int modo_seleccionado){
                 cin>>seleccion;
                 cin.ignore();
                 switch(seleccion){
-                    case '1':
+                    case '1':/*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
                     do{
                         system("cls");
                         impresion_enemigos(modo_seleccionado);
@@ -700,7 +700,7 @@ void configuracion_creativo_juego_empezado(int modo_seleccionado){
                     cout<<"A continuacion, tendra que crear 10 enemigos"<<endl;
                         for(int i = 0; i<10;i++){
                             cout<<"\tENEMIGO -> "<<i+1<<endl;
-                            cout<<"Nombre -> ";
+                            cout<<"Nombre -> ";/*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
                             cin.getline(modo[modo_seleccionado].enemigo[i].nombre,30,'\n');
                             cout<<"Vida -> ";
                             cin>>modo[modo_seleccionado].enemigo[i].vida;
@@ -730,7 +730,7 @@ void configuracion_creativo_juego_empezado(int modo_seleccionado){
             cin>>valor2;
             modo[modo_seleccionado].espacio[valor2].item = modo[modo_seleccionado].item[valor-1];
             break;
-
+/*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
             case '6':
             system("cls");
             cout<<"IMPRIMIENDO TODOS LOS ITEMS/ENEMIGOS/EVENTOS"<<endl;
@@ -755,9 +755,9 @@ void configuracion_creativo_juego_empezado(int modo_seleccionado){
             break;
         }
     }
-    
+    /*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
 } 
-
+/*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
 //EXTRA
 void puntos_de_carga(){
     for(int i=0; i<5;i++){
@@ -785,7 +785,7 @@ void creacion_del_personaje(int modo_seleccionado){
     cout<<"(3)-Dificil"<<endl;
     cin>>valor;
     cin.ignore();
-    switch(valor){
+    switch(valor){/*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
         case '1':
             modo[modo_seleccionado].personaje.estadisticas.vida_maxima = 150;
             modo[modo_seleccionado].personaje.estadisticas.vida = 150;
@@ -815,7 +815,7 @@ void creacion_del_personaje(int modo_seleccionado){
     modo[modo_seleccionado].personaje.estadisticas.oleadas_sobrevividas = 0;
     modo[modo_seleccionado].personaje.estadisticas.enemigos_matados = 0;
     modo[modo_seleccionado].personaje.estadisticas.enemigos_sobrevividos = 0;
-    for(int i = 0; i<10;i++){
+    for(int i = 0; i<10;i++){/*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
         strcpy(modo[modo_seleccionado].espacio[i].item.nombre_del_item, "Vacio") ;
         modo[modo_seleccionado].espacio[i].item.usos = 0;
         modo[modo_seleccionado].espacio[i].item.cantidad = 0;
@@ -828,9 +828,9 @@ bool gestor_vida(int modo_seleccionado){
     bool personaje_vivo_muerto = true;
     if(modo[modo_seleccionado].personaje.estadisticas.vida <=0){
         if(modo[modo_seleccionado].personaje.estadisticas.vidas>=1){
-            modo[modo_seleccionado].personaje.estadisticas.vidas -=1;
+            modo[modo_seleccionado].personaje.estadisticas.vidas -=1;/*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
             modo[modo_seleccionado].personaje.estadisticas.vida = modo[modo_seleccionado].personaje.estadisticas.vida_maxima;
-        }
+        }/*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
         else{
             if(modo[modo_seleccionado].personaje.estadisticas.vidas==0){
             for(int i = 0; i<10;i++){
@@ -852,7 +852,7 @@ bool gestor_vida(int modo_seleccionado){
         personaje_vivo_muerto = false;
     }
     return personaje_vivo_muerto;
-}
+}/*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
 //FUNCIONES DE AVANZAR
 void avanzar(int modo_seleccionado){
     int probabilidad = 0+rand()%10;
@@ -863,7 +863,7 @@ void avanzar(int modo_seleccionado){
     if(probabilidad<=3){
         avanzar_item(modo_seleccionado);
     }
-    }
+    }/*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
 }
 void avanzar_enemigo(int modo_seleccionado){
     int valor;
@@ -884,7 +884,7 @@ void avanzar_enemigo(int modo_seleccionado){
     cin.ignore();
     switch(eleccion){
         case '1':
-        
+        /*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
         do{
             inventario_verificador(modo_seleccionado);
             system("cls");
@@ -907,7 +907,7 @@ void avanzar_enemigo(int modo_seleccionado){
                     sleep(1);
                     correr_escapar(modo_seleccionado, aleatorio, aleatorio2);
                     break;
-
+/*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
                 }
                 else{
                     modo[modo_seleccionado].evento[aleatorio].enemigo.vida -= modo[modo_seleccionado].espacio[valor].item.golpe;
@@ -930,7 +930,7 @@ void avanzar_enemigo(int modo_seleccionado){
             
         }while(valor<0 || valor>9 || strcmp(modo[modo_seleccionado].espacio[valor].item.nombre_del_item, "Vacio" ) == 0 || modo[modo_seleccionado].evento[aleatorio].enemigo.vida >0);
         
-
+/*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
         
         
         break;
@@ -952,7 +952,7 @@ void correr_escapar(int modo_seleccionado, int aleatorio, int aleatorio2){
             int aleatorio3 = 1+rand()%modo[modo_seleccionado].evento[aleatorio].enemigo.golpe;
             cout<<"Has recibido de golpe -> "<<aleatorio3<<endl;
             cout<<"Vida actual, antes del golpe -> "<<modo[modo_seleccionado].personaje.estadisticas.vida<<endl;
-            sleep(1);
+            sleep(1);/*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
             modo[modo_seleccionado].personaje.estadisticas.vida -=aleatorio3;
             modo[modo_seleccionado].personaje.estadisticas.golpe_total_recibido +=aleatorio3;
             modo[modo_seleccionado].personaje.estadisticas.oleadas_sobrevividas++;
@@ -981,7 +981,7 @@ void avanzar_item(int modo_seleccionado){
         cout<<"Golpe -> "<<modo[modo_seleccionado].evento[aleatorio].item.golpe<<endl;
         cout<<"Usos -> "<<modo[modo_seleccionado].evento[aleatorio].item.usos<<endl;
         cout<<"\n\n\t(1)-Revisar/Tomar\t(2)-Irse"<<endl;
-        cin>>eleccion;
+        cin>>eleccion;/*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
         cin.ignore();
         switch(eleccion){
             case '1':
@@ -1005,7 +1005,7 @@ void avanzar_item(int modo_seleccionado){
                         cin>>eleccion;
                         cin.ignore();
                         switch(eleccion){
-                            case '1': 
+                            case '1': /*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
                             modo[modo_seleccionado].espacio[valor].item = modo[modo_seleccionado].evento[aleatorio].item;
                             cout<<"Se guardo correctamente...."<<endl;
                             sleep(1);
@@ -1146,7 +1146,7 @@ void imprimir_estadisticas(int modo_seleccionado){
     cout<<"Vida Actual -> "<<modo[modo_seleccionado].personaje.estadisticas.vida<<endl;
     if(modo[modo_seleccionado].personaje.estadisticas.estado){
         cout<<"Estado -> VIVO"<<endl;
-    }
+    }/*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
     else{
         if(!modo[modo_seleccionado].personaje.estadisticas.estado){
         cout<<"Estado -> MUERTO"<<endl;
@@ -1158,7 +1158,7 @@ void imprimir_estadisticas(int modo_seleccionado){
     cout<<"Golpe Total Recibido -> "<<modo[modo_seleccionado].personaje.estadisticas.golpe_total_recibido<<endl;
     cout<<"Enemigos Sobrevividos -> "<<modo[modo_seleccionado].personaje.estadisticas.enemigos_sobrevividos<<endl;
     system("pause");
-}
+}/*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
 //GUARDADO DE DATOS
 void guardarinfousuario(){
     fs::create_directory("TheAdventure");
@@ -1175,12 +1175,13 @@ void guardarinfousuario(){
     archivo<<modo[modo_seleccionado].personaje.estadisticas.vida_maxima<<endl;
     archivo<<modo[modo_seleccionado].personaje.estadisticas.vidas<<endl;
     archivo<<modo[modo_seleccionado].personaje.estadisticas.vida<<endl;
+    /*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
     archivo<<modo[modo_seleccionado].personaje.estadisticas.oleadas_sobrevividas<<endl;
     archivo<<modo[modo_seleccionado].personaje.estadisticas.golpe_total_efectuado<<endl;
     archivo<<modo[modo_seleccionado].personaje.estadisticas.enemigos_matados<<endl;
     archivo<<modo[modo_seleccionado].personaje.estadisticas.golpe_total_recibido<<endl;
     archivo<<modo[modo_seleccionado].personaje.estadisticas.enemigos_sobrevividos<<endl;
-    modo_seleccionado = 1;
+    modo_seleccionado = 1;/*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
 
     archivo.close();
     archivo.open("TheAdventure/creativo.txt",ios::out);
@@ -1192,6 +1193,7 @@ void guardarinfousuario(){
     archivo<<modo[modo_seleccionado].personaje.estadisticas.vida_maxima<<endl;
     archivo<<modo[modo_seleccionado].personaje.estadisticas.vidas<<endl;
     archivo<<modo[modo_seleccionado].personaje.estadisticas.vida<<endl;
+    /*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
     archivo<<modo[modo_seleccionado].personaje.estadisticas.oleadas_sobrevividas<<endl;
     archivo<<modo[modo_seleccionado].personaje.estadisticas.golpe_total_efectuado<<endl;
     archivo<<modo[modo_seleccionado].personaje.estadisticas.enemigos_matados<<endl;
@@ -1199,12 +1201,13 @@ void guardarinfousuario(){
     archivo<<modo[modo_seleccionado].personaje.estadisticas.enemigos_sobrevividos<<endl;
     archivo.close();
 
-    
+    /*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
 }
 void leerinfousuario() {
     ifstream archivo;
     bool creado,estado;
     int modo_seleccionado;
+    /*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
     char nombre[25], apellido[25], apodo[15];
     int vida_maxima, vidas, vida, oleadas_sobrevividas, golpe_total_efectuado, enemigos_matados, golpe_total_recibido, enemigos_sobrevividos;
 
@@ -1228,7 +1231,7 @@ void leerinfousuario() {
     modo[modo_seleccionado].personaje.estadisticas.enemigos_matados = enemigos_matados;
     modo[modo_seleccionado].personaje.estadisticas.golpe_total_recibido = golpe_total_recibido;
     modo[modo_seleccionado].personaje.estadisticas.enemigos_sobrevividos = enemigos_sobrevividos;
-
+/*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
     modo_seleccionado = 1;
     archivo.open("TheAdventure/creativo.txt", ios::in);
 
@@ -1244,6 +1247,7 @@ void leerinfousuario() {
     modo[modo_seleccionado].personaje.estadisticas.vida_maxima = vida_maxima;
     modo[modo_seleccionado].personaje.estadisticas.vidas = vidas;
     modo[modo_seleccionado].personaje.estadisticas.vida = vida;
+    /*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
     modo[modo_seleccionado].personaje.estadisticas.oleadas_sobrevividas = oleadas_sobrevividas;
     modo[modo_seleccionado].personaje.estadisticas.golpe_total_efectuado = golpe_total_efectuado;
     modo[modo_seleccionado].personaje.estadisticas.enemigos_matados = enemigos_matados;
