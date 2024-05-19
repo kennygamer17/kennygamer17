@@ -12,7 +12,7 @@ int main(){
     comprobador(arreglo,tamano,acomodado);
 
 
-
+/*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
 
     return 0;
 }
@@ -30,7 +30,8 @@ void comprobador(int arreglo[],int tamano, bool& acomodado){
     if(acomodado){
        cout<<"El arreglo esta acomdado en orden creciente" <<endl;
     }
-    else{
+    else{/*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
         cout<<"El arreglo No esta acomodado en orden creciente" <<endl;
     }
 }
+/*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
