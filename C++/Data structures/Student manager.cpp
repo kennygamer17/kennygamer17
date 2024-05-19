@@ -398,3 +398,4 @@ void Agregarmateriaalumno(int& contador){
         cout<<"Alumno no encontrado...."<<endl;
     }
 }
+/*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
