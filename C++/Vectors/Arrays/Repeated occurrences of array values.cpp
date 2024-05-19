@@ -8,7 +8,7 @@ int main(){
     int ya_digitados[100];
     int ya_digitados_veces[100];
     srand(time(NULL));
-    
+    /*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
     for(int i = 0; i<100;i++){
         arreglo[i] = 1+rand()%10;
         veces[i] = 0;
@@ -22,7 +22,7 @@ int main(){
                 veces[i]++;
             }
         }
-    }
+    }/*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
     int contador = 0;
     for(int i = 0; i<100;i++){
         bool yadigitados = false;
@@ -31,12 +31,12 @@ int main(){
                 yadigitados = true;
                 break;
             }
-        }
+        }/*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
         if(!yadigitados){
             ya_digitados[contador] = arreglo[i];
             ya_digitados_veces[contador] = veces[i];
             contador++;
-            
+            /*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
         }
     }
     int arreglo_final[contador];
@@ -47,4 +47,4 @@ int main(){
         cout<<"Valor: ["<<arreglo_final[i]<<"]"<<" veces -> "<<"["<<arreglo_final_veces[i]<<"]"<<endl;
     }
     return 0;
-}
+}/*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
