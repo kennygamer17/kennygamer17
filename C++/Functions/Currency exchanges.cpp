@@ -51,3 +51,4 @@ void cambio(int cantidad, int total_dinero,int cambios[]){
     }
     system("pause");
 }
+/*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
