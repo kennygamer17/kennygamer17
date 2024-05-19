@@ -182,3 +182,4 @@ void impresion_informacion_del_ciclista(int i){
     cout<<"\tMinutos de la etapa actual ->->  "<<etapa[ciclista[i].numero_de_etapa-1].tiempo_etapa.minutos<<endl;
     cout<<"\tSegundos de la etapa actual ->"<<etapa[ciclista[i].numero_de_etapa-1].tiempo_etapa.segundos<<endl;
 }
+/*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
