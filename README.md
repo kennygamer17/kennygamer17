@@ -12,7 +12,8 @@ It's probably not the best, since I'm just learning, but you learn from your mis
 
 # Never back down, NEVER GIVE UP!!!
 
-#Programming languages used:
+# Programming languages used:
+
 **C++**
 >This language is the one I use the most, and the one I master the most. I have created a great variety of executable programs on terminals.
 
