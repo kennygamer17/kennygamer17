@@ -10,7 +10,7 @@ This is my first and main Repo, in it we can find some of my projects, some of t
 For now, I just want to learn more, more, and MORE!! about programming languages.
 It's probably not the best, since I'm just learning, but you learn from your mistakes hahaha.
 
-# Never back down, NEVER GIVE UP!!!
+
 
 # Programming languages used:
 
@@ -28,3 +28,4 @@ It's probably not the best, since I'm just learning, but you learn from your mis
 **Lua**
 >This is a language that I got to use to make simple video games on the Roblox Studio platform, so my knowledge of the use of this language is somewhat limited.
 
+# Never back down, NEVER GIVE UP!!!
