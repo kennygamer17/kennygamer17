@@ -15,7 +15,7 @@ int main(){
     }
     impares(arreglo,tamano);
     pares(arreglo,tamano);
-}
+}/*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
 void impares(int arreglo[], int tamano){
     cout<<"\nImprimiento valores impares"<<endl;
     for(int i = 0; i<tamano; i++){
@@ -31,4 +31,4 @@ void pares(int arreglo[], int tamano){
             cout<<arreglo[i]<<" ";
         }
     }
-}
+}/*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
