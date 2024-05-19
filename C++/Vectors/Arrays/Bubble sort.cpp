@@ -6,11 +6,9 @@ int main(){
     //Definimos las variables que ocupamos de manera local
     int espacios = 0;
     int intermediario = 0;
-    
     //Pedimos que nos indique cuantos valores desea agregar en el arreglo para no gastar demasiada memoria
     cout<<"Cuantos valores desea agregar? ->";
     cin>>espacios;
-
     //Declaramos la variable arreglo como arreglo de tipo int, con el tamano maximo dado al inicio
     int arreglo[espacios];
 
@@ -19,7 +17,6 @@ int main(){
         cout<<"Digite el valor del espacio "<<i+1<<" -> ";
         cin>>arreglo[i];
     }
-
     //usamos la libreria stdlib.h para hacer uso de la funcion pause para esperar tiempo
     system("pause");
 /*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
@@ -30,19 +27,15 @@ int main(){
             intermediario = arreglo[i];
             arreglo[i] = arreglo[i+1];
             arreglo[i+1] = intermediario;
-
         }
     }
     }
-
     //Los imprimimos de manera ascendente
     cout<<"Se acomodaron de orden ascendente: "<<endl;
     for(int i = 0; i<espacios; i++){
         cout<<"Espacio "<<i+1<<" -> "<<arreglo[i]<<endl;
-
     }
     system("pause");
-
     //los imprimimos de manera descendente
     cout<<"Se acomodaron de orden ascendente: "<<endl;
     for(int i = espacios; i>0; i--){
