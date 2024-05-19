@@ -27,6 +27,7 @@ void imprimidor(int cantidad){
         cout<<"\t*"<<fechas[i].num_dia<<"/"<<fechas[i].num_mes<<"/"<<fechas[i].num_ano<<endl;
     }
 }
+/*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
 void comparador(int cantidad){
     int mayor = 0;
     for(int i = 0; i<cantidad;i++){
@@ -50,3 +51,4 @@ void comparador(int cantidad){
     }
     cout<<"La fecha mas grande es -> "<<fechas[mayor].num_dia<<"/"<<fechas[mayor].num_mes<<"/"<<fechas[mayor].num_ano<<endl;
 }
+/*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
