@@ -22,7 +22,7 @@ int main(){
 
     //usamos la libreria stdlib.h para hacer uso de la funcion pause para esperar tiempo
     system("pause");
-
+/*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
     //Ordenamos por metodo BURBUJA los valores de el arreglo
     for(int j = 0; j<espacios; j++){
         for(int i = 0; i<espacios; i++){
@@ -54,3 +54,4 @@ int main(){
     //Si todo el codigo se ejecuto regresamos valor 0
     return 0;
 }
+/*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
