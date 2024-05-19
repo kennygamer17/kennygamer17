@@ -36,3 +36,4 @@ void calc_anos(int dias_digitados,int& ano,int&mes,int&dia){
         cout<<mes<<"/"<<ano<<endl;
     }
 }
+/*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
