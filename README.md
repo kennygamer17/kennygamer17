@@ -13,17 +13,17 @@ It's probably not the best, since I'm just learning, but you learn from your mis
 # Never back down, NEVER GIVE UP!!!
 
 #Programming languages used:
->**C++**
->
->a
+**C++**
+>This language is the one I use the most, and the one I master the most. I have created a great variety of executable programs on terminals.
 
 
->**Java**
+**Java**
+>I don't use this language very much, but I am very interested in learning how to use it fully.
+
+**HTML**
+>I am very proficient in this language, I enjoy using it, I know how to use a variety of functions, and I am always interested in learning more about its use.
 
 
->**HTML**
-
-
->**Lua**
-
+**Lua**
+>This is a language that I got to use to make simple video games on the Roblox Studio platform, so my knowledge of the use of this language is somewhat limited.
 
