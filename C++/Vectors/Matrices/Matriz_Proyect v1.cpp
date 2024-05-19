@@ -15,7 +15,7 @@ int main(){
     int filas, columnas,eleccion,editar_fila,editar_columna,aux;
     //Variables boleanas para comprobaciones
     bool continuar = true,matriz_principal_creada = false,matrices_guardadas = false;
-
+/*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
     while(continuar){
         cout<<"\n[----------Menu----------]"<<endl;
         cout<<"(1)-Crear Matriz/Agregar valores"<<endl;
@@ -27,7 +27,7 @@ int main(){
         /*cout<<""<<endl;
         cout<<""<<endl;
         cout<<""<<endl;
-        */
+        *//*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
         cout<<"(7)-Salir"<<endl;
         //Si un valor ingresado sobrepasa las opciones, manda error
        do{
@@ -54,7 +54,7 @@ int main(){
             }
             }while((columnas >100 || columnas <1) || (filas>100 || filas<1));
             matriz_principal_creada = true;
-            }
+            }/*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
             //Esta vez no usamos else if, ya que puede que la matriz apenas se cree y necesite agregar valor
             if(matriz_principal_creada){
                 for(int i = 0; i<filas; i++){
@@ -95,7 +95,7 @@ int main(){
         case 3: 
             cout<<"Usted eligio la opcion (3)"<<endl;
             if(matriz_principal_creada){
-                do{
+                do{/*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
             //Si no selecciona repitira la misma indicacion
             cout<<"\nSeguro que quiere borrar la matriz? al borrarla tendr que volver a indicar las filas y columnas\npuede guardar la matriz, ¿Esta seguro? (1)-Si (2)-No"<<endl;
             cin>>eleccion;
@@ -116,7 +116,7 @@ int main(){
                     system("pause");
                 }
             }
-            }
+            }/*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
             else{
                 if(!matriz_principal_creada){
                     cout<<"No hay ninguna matriz creada...."<<endl;
@@ -148,7 +148,7 @@ int main(){
             cin>>matriz_principal[editar_fila-1][editar_columna-1];
             cout<<"El valor se ha cambiado....."<<endl;
             system("pause");
-            }
+            }/*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
             else{
                 if(!matriz_principal_creada){
                     cout<<"No hay ninguna matriz creada...."<<endl;
@@ -176,7 +176,7 @@ int main(){
                 cout<<"(1)-Si"<<endl;
                 cout<<"(2)-No,quiero volver"<<endl;
                 cin>>aux;
-            }
+            }/*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
             else{
                 if(espacios_arreglo_disponibilidad[lugar_guardado-1] == "disponible"){
                     aux =1;
@@ -201,7 +201,7 @@ int main(){
                             columnas_copias[lugar_guardado-1] = columnas;
                             espacios_arreglo_disponibilidad[lugar_guardado-1] = "No_disponible";
                         break;
-                        case 2: 
+                        case 2: /*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
                         cout<<"Guardando...."<<endl;
                         system("pause");
                         for(int i = 0; i<filas; i++){
@@ -235,7 +235,7 @@ int main(){
                                     copia_matriz_4[i][j] = matriz_principal[i][j];
                     
                                 }
-                            }
+                            }/*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
                             filas_copias[lugar_guardado-1] = filas;
                             columnas_copias[lugar_guardado-1] = columnas;
                             espacios_arreglo_disponibilidad[lugar_guardado-1] = "No_disponible";
@@ -269,7 +269,7 @@ int main(){
                 }
             }
             }
-            else{
+            else{/*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
                 if(!matriz_principal_creada){
                     cout<<"No se ha creado ninguna matriz...."<<endl;
                 }
@@ -295,7 +295,7 @@ int main(){
                     cout<<"Espacio -> "<<i+1;
                     if(espacios_arreglo_disponibilidad[i] == "No_disponible"){
                         cout<<" Activo"<<endl;
-                    }
+                    }/*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
                     else{
                         cout<<" No Activo"<<endl;
                     }
@@ -326,7 +326,7 @@ int main(){
                     case 2: 
                         if(espacios_arreglo_disponibilidad[eleccion-1] == "disponible"){
                             cout<<"No hay una matriz guardada en este espacio..."<<endl;
-                        }
+                        }/*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
                         else{
                             if(espacios_arreglo_disponibilidad[eleccion-1] == "No_disponible"){
                                 cout<<"imprimiendo matriz............"<<endl;
@@ -362,7 +362,7 @@ int main(){
                     case 4: 
                         if(espacios_arreglo_disponibilidad[eleccion-1] == "disponible"){
                             cout<<"No hay una matriz guardada en este espacio..."<<endl;
-                        }
+                        }/*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
                         else{
                             if(espacios_arreglo_disponibilidad[eleccion-1] == "No_disponible"){
                                 cout<<"imprimiendo matriz............"<<endl;
@@ -394,11 +394,11 @@ int main(){
                             }
                         }
                         system("pause");
-                        break;
+                        break;/*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
                     default: cout<<"Este espacio no existe..."<<endl; break;
                 }
                     break;
-                    case 2:
+                    case 2:/*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
                     //este es para la opcion 2, si queremos que la matriz principal adquiera el valor de una guardada aqui esta el codigo
                         cout<<"Que matriz desea copiar?"<<endl;
                         for(int i = 0; i<5; i++){
@@ -412,10 +412,10 @@ int main(){
                                 }
                             }
                         }
-                        cin>>eleccion;
+                        cin>>eleccion;/*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
                         if(espacios_arreglo_disponibilidad[eleccion-1] == "No_disponible"){
                             switch(eleccion){
-                                case 1: 
+                                case 1: /*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
                                     aux = eleccion;
                                     if(matriz_principal_creada){
                                         cout<<"---PRECAUCION---"<<endl;
@@ -429,14 +429,14 @@ int main(){
                                         cout<<"copiando matriz....."<<endl;
                                         eleccion = 1;
                                         system("pause");
-                                        matriz_principal_creada = true;
+                                        matriz_principal_creada = true;/*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
                                         //ponemos como activa, porque puede que se haya borrado la matriz principal anteriormente, ents para que
                                         //se ejecuten todas las funciones la ponemos como activa
                                         //dato podriamos hacer una funcion al principio del bucle que detecte si la matriz principal tiene valores >0, por lo que
                                         //si o si estaria en uso
                                         //pero luego lo hago xd
                                     }
-                                        if(eleccion == 1){
+                                        if(eleccion == 1){/*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
                                             filas = filas_copias[aux-1];
                                             columnas = columnas_copias[aux-1];
                                             for(int i = 0; i<filas; i++){
@@ -462,12 +462,12 @@ int main(){
                                         cout<<"Si usted no guardo la matriz actual, esta se perdera...."<<endl;
                                         cout<<"Seguro que quiere copiar esta matriz, y usarla como principal?..."<<endl;
                                         cout<<"(1)-Si, estoy seguro"<<endl;
-                                        cout<<"(2)-No, quiero regresar"<<endl;
+                                        cout<<"(2)-No, quiero regresar"<<endl;/*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
                                         cin>>eleccion;
                                     }
                                     else{
                                         cout<<"copiando matriz....."<<endl;
-                                        eleccion = 1;
+                                        eleccion = 1;/*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
                                         system("pause");
                                         matriz_principal_creada = true;
                                         //ponemos como activa, porque puede que se haya borrado la matriz principal anteriormente, ents para que
@@ -485,11 +485,11 @@ int main(){
                                                 }
                                             }
                                             cout<<"Ahora la matriz principal se ha actualizado....."<<endl;
-                                            system("pause");
+                                            system("pause");/*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
                                         }
                                         else{
                                             cout<<"Regresando...."<<endl;
-                                            system("pause");
+                                            system("pause");/*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
                                         }
                                 break;
                                 case 3:    
@@ -499,12 +499,12 @@ int main(){
                                         cout<<"Si usted no guardo la matriz actual, esta se perdera...."<<endl;
                                         cout<<"Seguro que quiere copiar esta matriz, y usarla como principal?..."<<endl;
                                         cout<<"(1)-Si, estoy seguro"<<endl;
-                                        cout<<"(2)-No, quiero regresar"<<endl;
+                                        cout<<"(2)-No, quiero regresar"<<endl;/*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
                                         cin>>eleccion;
                                     }
                                     else{
                                         cout<<"copiando matriz....."<<endl;
-                                        eleccion = 1;
+                                        eleccion = 1;/*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
                                         system("pause");
                                         matriz_principal_creada = true;
                                         //ponemos como activa, porque puede que se haya borrado la matriz principal anteriormente, ents para que
@@ -523,7 +523,7 @@ int main(){
                                             }
                                             cout<<"Ahora la matriz principal se ha actualizado....."<<endl;
                                             system("pause");
-                                        }
+                                        }/*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
                                         else{
                                             cout<<"Regresando...."<<endl;
                                             system("pause");
@@ -539,7 +539,7 @@ int main(){
                                         cout<<"(2)-No, quiero regresar"<<endl;
                                         cin>>eleccion;
                                     }
-                                    else{
+                                    else{/*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
                                         cout<<"copiando matriz....."<<endl;
                                         eleccion = 1;
                                         system("pause");
@@ -564,7 +564,7 @@ int main(){
                                         else{
                                             cout<<"Regresando...."<<endl;
                                             system("pause");
-                                        }
+                                        }/*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
                                 break;
                                 case 5: 
                                     aux = eleccion;
@@ -598,15 +598,15 @@ int main(){
                                             cout<<"Ahora la matriz principal se ha actualizado....."<<endl;
                                             system("pause");
                                         }
-                                        else{
+                                        else{/*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
                                             cout<<"Regresando...."<<endl;
                                             system("pause");
                                         }
-                                break;
+                                break;/*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
 
                                 default: cout<<"Ese espacio no existe...."<<endl; break;
 
-
+/*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
 
                             }
                         }
@@ -619,18 +619,18 @@ int main(){
                         
                     break;
                 }
-                
+                /*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
                 
                 
 
-            }
+            }/*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
             else{
                 if(!matrices_guardadas){
                     cout<<"No tiene ninguna matriz guardada aun...."<<endl;
                     system("pause");
                 }
             }
-        break;
+        break;/*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
         case 7: 
             cout<<"|--------\tGracias por usar mi programa!!!!!!!! Made by:Lexor_12\t--------|"<<endl;
             continuar = false;
@@ -643,3 +643,4 @@ int main(){
     }
     return 0;
 }
+/*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
