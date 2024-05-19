@@ -43,3 +43,4 @@ void primo(int numero){
     }
     cout<<"\n"<<endl;
 }
+/*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
