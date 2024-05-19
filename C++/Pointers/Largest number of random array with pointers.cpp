@@ -16,6 +16,7 @@ int main(){
     cout<<"Mayor Num Arreglo: "<<mayor;
     return 0;
 }
+/*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
 void random(int *arreglo, int longitud,int max,int min){
     #include <time.h>
         srand(time(NULL));
@@ -34,3 +35,4 @@ int elderly(int *array,int l){
     }
     return value;
 }
+/*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
