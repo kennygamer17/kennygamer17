@@ -1,14 +1,15 @@
 #include <iostream>
 #include <string.h>
     using namespace std;
-
+//Made by Lexor_12 || kennygamer17 on github
 const char operadores[6] = "+-*/=";
 void calculador(char tipo,char cadena[], float& resultado);
-
+//Made by Lexor_12 || kennygamer17 on github
 int main(){
     int contador;
     char anterior_signo = '+';
     int longitud2;
+  //Made by Lexor_12 || kennygamer17 on github
     bool primeravez = true;
     char operacion[1000];
     char cambiador[1000];
@@ -19,6 +20,7 @@ int main(){
     int longitud = strlen(operacion);
     operacion[longitud] = '=';
     int contador1 = 0;
+  //Made by Lexor_12 || kennygamer17 on github
     for(int i = 0; i<=longitud;i++){
         contador++;
         for(int j = 0; j<6;j++){
@@ -49,6 +51,7 @@ int main(){
             }
             anterior_signo = tipo;
         }
+      //Made by Lexor_12 || kennygamer17 on github
         if(operacion[i] == '='){
             cout<<"El resultado es -> "<<resultado<<endl;
             break;
@@ -61,6 +64,7 @@ void calculador(char tipo,char cadena[], float& resultado){
     float valor = atof(cadena);
     switch(tipo){
         case '+':
+          //Made by Lexor_12 || kennygamer17 on github
         resultado +=valor;
         break;
         case '-':
@@ -74,4 +78,4 @@ void calculador(char tipo,char cadena[], float& resultado){
         break;
     }
 }
-/*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
+//Made by Lexor_12 || kennygamer17 on github
