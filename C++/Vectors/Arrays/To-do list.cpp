@@ -13,7 +13,7 @@ int main(){
     int numero = 0;
     for(int j = 0; j<100; j++){
         tareas[j] = "Vacio";
-    }    
+    }    /*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
     do{
         tareas_agregadas = false;
         for(int j = 0; j<100; j++){
@@ -21,7 +21,7 @@ int main(){
                 tareas_agregadas = true;
             }
         }
-
+/*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
     do{
     cout<<"\n[-------Menu-------]"<<endl;
     cout<<"Que desea hacer ->"<<endl;
@@ -37,7 +37,7 @@ int main(){
         system("pause");
     }
     }while(eleccion>5 || eleccion<1);
-
+/*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
     switch(eleccion){
         case 1: cout<<"Escriba la tarea -> "<<endl;
                 getline(cin, tareas[i]);
@@ -55,7 +55,7 @@ int main(){
                 for(int j = 0; j < 100; j++){
                     if(tareas[j] != "Vacio"){
                     cout<<j+1<<". "<<tareas[j]<<endl;
-                    }
+                    }/*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
 
                 }
                 system("pause");
@@ -76,7 +76,7 @@ int main(){
                 tareas[borrar-1] = "Vacio";
                 system("pause");
                 }
-                }
+                }/*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
         break;
         case 4: if(!tareas_agregadas){
             cout<<"No hay tareas..."<<endl;
@@ -89,7 +89,7 @@ int main(){
                 if(tareas[numero-1]=="Vacio"){
                     cout<<"Esa tarea no existe"<<endl;
                 }
-                else{
+                else{/*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
                     cout<<"\nTarea encontrada ";
                     cout<<numero<<". ->"<<tareas[numero-1]<<endl;
                     cout<<"\nDigiete el valor a modificar "<<endl;
@@ -111,4 +111,4 @@ int main(){
     } 
     }while(continuar);
     return 0;
-}
+}/*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
