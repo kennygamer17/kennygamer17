@@ -11,3 +11,10 @@ For now, I just want to learn more, more, and MORE!! about programming languages
 It's probably not the best, since I'm just learning, but you learn from your mistakes hahaha.
 
 # Never back down, NEVER GIVE UP!!!
+
+#Programming languages used:
+>**C++**
+
+>**Java**
+>**HTML**
+>**Lua**
