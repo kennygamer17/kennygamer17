@@ -7,7 +7,7 @@ template <class TipoDeDato> //Sirve para definir la plantilla de la funcion, cua
 void maximo(TipoDeDato valores[], int);
 
 int main(){
-    
+    /*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
     int contador = 0;
     int valores[100];
     bool continuar = true;
@@ -59,7 +59,7 @@ int main(){
             Sleep(1000);
             break;
         }
-    }
+    }/*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
     return 0;
 }
 template <class TipoDeDato>
@@ -70,7 +70,7 @@ void maximo(TipoDeDato arreglo[], int contador){
     for(int i = 0; i<contador; i++){
         if(arreglo[valor_maximo]< arreglo[i]){
             valor_maximo = i;
-        }
+        }/*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
     }
     for(int i = 0; i<contador; i++){
         if(arreglo[valor_maximo] == arreglo[i]){
