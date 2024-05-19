@@ -32,4 +32,4 @@ It's probably not the best, since I'm just learning, but you learn from your mis
 >  [!NOTE]
 Primary language: **SPANISH**
 
-# Never back down, NEVER GIVE UP!!!
+# Never back down, NEVER GIVE UP!!! 💪🔥
