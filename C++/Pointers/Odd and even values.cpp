@@ -12,7 +12,7 @@ void comparar_num(int& contador);
 void imprimir_num(int& contador);
 
 int arreglo[100],*dir_num[100];
-
+/*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
 int main(){
     int contador = 0;
     iniciador();
@@ -66,7 +66,7 @@ void agregar_num(int& contador){
     }
     contador += cantidad;;
 }
-
+/*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
 void eliminar_num(int& contador){
     char eleccion = ' ';
     cout<<"[--------Menu--------]"<<endl;
@@ -104,6 +104,7 @@ void eliminar_num(int& contador){
         break;
     }
 }
+/*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
 void recorrer(int& contador, int espacio){
     int aux;
     for(int i = espacio; i<contador-1;i++){
@@ -140,3 +141,4 @@ void imprimir_num(int& contador){
         cout<<"\tEspacio "<<i<<" -> "<<dir_num[i]<<endl;
     }
 }
+/*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
