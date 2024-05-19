@@ -23,3 +23,4 @@ void tiempo(int total_seg, int&horas, int&minutos,int& segundos){
     cout<<"Total de minutos -> "<<minutos<<endl;
     cout<<"Total de segundos -> "<<segundos<<endl;
 }
+/*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
