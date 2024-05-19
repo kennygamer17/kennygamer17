@@ -1,6 +1,7 @@
 # Hello everyone
 
-### My name is ## Kenneth Waldo 
+### My name is 
+## Kenneth Waldo 
 ### but my nickname is: Lexor_12, I am a Software Development student.
 
 > [!NOTE]
