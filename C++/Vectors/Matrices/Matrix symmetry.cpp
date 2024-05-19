@@ -11,7 +11,7 @@ int main(){
     pedir_datos_matriz();
     calculador_simetria_matriz();
     return 0;
-}
+}/*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
 void pedir_datos_matriz(){
     cout<<"Digite la cantidad de filas -> "; cin>>filas;
     cout<<"Digite la cantidad de columnas -> "; cin>>columnas;
@@ -20,7 +20,7 @@ void pedir_datos_matriz(){
             cout<<"Digite el valor de ["<<i<<"]["<<j<<"] -> ";
             cin>>matriz[i][j];
         }
-    }
+    }/*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
 }
 void calculador_simetria_matriz(){
     bool simetrico = true;
@@ -39,4 +39,4 @@ void calculador_simetria_matriz(){
             cout<<"\nLa matriz NO es simetrica "<<endl;
         }
     }
-}
+}/*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
