@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <time.h>
     using namespace std;
-
+/*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
 int main(){
     int arreglo[100];
     int repetir[100];
@@ -15,7 +15,7 @@ int main(){
 
     for(int i = 0; i<100; i++){
         arreglo[i] = 0;
-        repetir[i] = 0;
+        repetir[i] = 0;/*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
     }
     for(int i = 0; i<100; i++){
         arreglo[i] = 1+rand()%100;
@@ -39,7 +39,7 @@ int main(){
     cout<<" la cantidad de numeros menores a 50 es de -> "<<contador<<endl;
     contador = 0;
     for(int i = 0; i<100; i++){
-        contador++;
+        contador++;/*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
         sumador += arreglo[i];
     }
     promedio = sumador/contador;
@@ -66,7 +66,7 @@ int main(){
         if(num_menor> repetir[i]){
             num_menor = repetir[i];
         }
-    }
+    }/*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
     printf("\n---------------------------Numeros con menor repeticiones---------------------------\n\n");
      for(int i = 0; i<100; i++){
         if(repetir[i] == num_menor){
@@ -75,4 +75,4 @@ int main(){
     }
      printf("\n\n---------------------------Gracias por ver || Lexor_12 ---------------------------\n\n");
     return 0;
-}
+}/*MADE BY: kennygamer17 on Github || Lexor_12 on YT*/
