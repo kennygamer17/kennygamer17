@@ -23,7 +23,7 @@ void actualizarValoresGenerales(int& idProducto,string& id, string& nombre, floa
             cout << "Error, formato incorrecto, recuerde escribir el precio sin $ y otros caracteres, puede usar valores numericos con decimales" << endl;
         }
     } while (!Producto::esIngresoNumericoENTEROCorrecto(aux));
-    precio = stoi(aux);
+    precio = stof(aux);
 }
 bool validadFechaIngreso(string& ingreso) {
     if (ingreso.length() != 10) {
@@ -45,11 +45,12 @@ bool validadFechaIngreso(string& ingreso) {
 int main() {
     // Crear la lista de productos
     int idProducto = 0;
-    string ingreso;
+    string ingreso = "\0";
     ListadeProductos lista;//Variable general, de esta se hara 1 sola lista     //Made by kennygamer17 on github || Lexor_12
     bool programaContinuar = true;
     cout << "\tBIENVENIDO AL PROGRAMA PARA GESTIONAR PRODUCTOS" << endl;
     while (programaContinuar) {
+        ingreso = '\0';
         do {
             cout << "\n\n--------------------------MENU GENERAL--------------------------" << endl;
             cout << "(1)-Mostrar Lista" << endl;
@@ -89,7 +90,7 @@ int main() {
                     }
                     break;
                 }
-
+                break;
             case '2':
                 Producto * nuevo_nodo;
                 do {
@@ -104,7 +105,7 @@ int main() {
                         cout << "Lo sentimos, esa opcion no existe" << endl;
                     }
                 } while (ingreso.length() > 1 || !Producto::esNumero(ingreso[0]));
-                if (ingreso[0] != 5) {
+                if (ingreso[0] != '5') {
                     string id, nombre, marca, fechaDeCaducidad, tipoDeAlimento, talla, color, tipoDeRopa, aux;
                     float precio = 0.00;
                     int cantidadEnStock = 0, garantia = 0;
