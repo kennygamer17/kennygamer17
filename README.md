@@ -28,6 +28,8 @@ It's probably not the best, since I'm just learning, but you learn from your mis
 **Lua**
 >*This is a language that I got to use to make simple video games on the Roblox Studio platform, so my knowledge of the use of this language is somewhat limited.*
 
+**C#**
+>*This language is my seccond favourite. I have created a great variety of executable programs on terminals and Windows Forms Applications.*
 
 >  [!NOTE]
 Primary language: **SPANISH**
