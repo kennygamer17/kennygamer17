@@ -7,6 +7,11 @@
 > [!NOTE]
 This is my first and main Repo, in it we can find some of my projects, some of them are made in C++, but others are made in HTML,Java,etc I just want to show other people who I am when it comes to programming, I am passionate programming since I was little, my goal is to work in a large company.
 
+
+> [!NOTE]
+*Usage Notice
+You are free to use my code for any purpose, but please give me credit. A simple mention of my name or a link to this repository would be greatly appreciated.
+
 For now, I just want to learn more, more, and MORE!! about programming languages.
 It's probably not the best, since I'm just learning, but you learn from your mistakes hahaha.
 
