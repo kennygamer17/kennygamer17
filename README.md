@@ -38,9 +38,9 @@ It's probably not the best, since I'm just learning, but you learn from your mis
 
 # Skills with Certifications:
 **EXCEL**
->I am a certified Microsoft Office Specialist.
+>*I am a certified Microsoft Office Specialist.*
 **Cybersecurity Basics**
->I hold a certification in Cybersecurity Basics.
+>*I hold a certification in Cybersecurity Basics.*
 
 >  [!NOTE]
 Primary language: **SPANISH**
