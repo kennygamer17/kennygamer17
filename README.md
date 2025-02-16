@@ -9,8 +9,8 @@ This is my first and main Repo, in it we can find some of my projects, some of t
 
 
 > [!NOTE]
-*Usage Notice
-You are free to use my code for any purpose, but please give me credit. A simple mention of my name or a link to this repository would be greatly appreciated.
+Usage Notice
+You are free to use my code for any purpose for now (this may change in the future), but please give me credit. A simple mention of my name or a link to this repository would be greatly appreciated.
 
 For now, I just want to learn more, more, and MORE!! about programming languages.
 It's probably not the best, since I'm just learning, but you learn from your mistakes hahaha.
